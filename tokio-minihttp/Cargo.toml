@@ -1,0 +1,10 @@
+[package]
+name = "hello"
+version = "0.0.0"
+
+[dependencies]
+futures = "0.1"
+env_logger = "0.4"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+tokio-minihttp = { git = "https://github.com/tokio-rs/tokio-minihttp.git" }

@@ -1,0 +1,7 @@
+[package]
+name = "hello_world"
+version = "0.0.0"
+
+[dependencies]
+rocket = { git = "https://github.com/SergioBenitez/Rocket.git" }
+rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket.git" }
