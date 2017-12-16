@@ -13,7 +13,7 @@ List of frameworks:
 * [Shio](https://github.com/mehcode/shio-rs)
 * [tokio-minihttp](https://github.com/tokio-rs/tokio-minihttp) (not really a framework, but it is fast)
 
-All projects are compiled with `--release` parameter. I didnt test single
+All projects are compiled with `--release` parameter. I didn't test single
 thread performance for iron and rocket. I ran all tests on my MacBook Pro with 2.9Gh i7 
 with 4 physical cpus and 8 logical cpus. As a testing tool i used *wrk* and
 following commands
@@ -27,22 +27,22 @@ Some notes about benchmarks. 
 All projects are compiled with release parameter.
 
 I got best performance for sync frameworks with 8 threads, other number of 
-threads always gave me worse performance. Iron could handle piplined 
-requests with lower performace. Interestingly, Rocket completely failed in pipelined test.
+threads always gave me worse performance. *Iron* could handle piplined 
+requests with lower performace. Interestingly, *Rocket* completely failed in pipelined test.
 
-There are two reasons why i tested pipelined request. First, it is just fun too 
+There are two reasons why i tested pipelined request. First, it is just fun to
 see this huge numbers of processed requests :) Second, it is kind of 
-pre-requisite for http/2.0 support.
+pre-requisite for *HTTP/2.0* support.
 
 For asynchronous frameworks i wanted to see how multithreading influence 
 performance, but multithreading is actually harder than i expected. For example 
-I couldn’t find out how to run Gotham in mutiple threads. Seems it just assumes 
-developer need to come up with the way how to run it themselves. On other hand is Shio, 
+I couldn’t find out how to run *Gotham* in mutiple threads. Seems it just assumes 
+developer need to come up with the way how to run it themselves. On other hand is *Shio*, 
 i could run it in multiple threads, but there is no difference with 1 thread 
 performance. Maybe something is wrong with how macOS handle reuse address 
 socket option?. Also, I had to modify shio to make it support “http pipeline”.
 
-Each result in this table is best of five runs. All measurements are in req/sec.
+Each result in this table is best of five runs. All measurements are in *req/sec*.
 
 Name | 1 thread | 1 pipeline | 3 thread | 3 pipeline | 8 thread | 8 pipeline
 ---- | -------- | ---------- | -------- | ---------- | -------- | ----------
@@ -53,5 +53,5 @@ Rocket |   |   |   |   | 95.500 | failed
 Shio | 71.800 | 317.800 |   |   |   |   |
 tokio-minihttp | 106.900 | 1.047.000 |   |   |   |
 
-Absolute winner is tokio-minihttp. Which is makes sense, it doesn’t do too much. 
+Absolute winner is *tokio-minihttp*. Which is makes sense, it doesn’t do too much. 
 But it is good reference point.
