@@ -1,4 +1,4 @@
-## Rust web framework benchmarks
+## Rust web frameworks benchmarks
 
 This is totally unscientific and probably pretty useless. In real world business
 logic would dominate on performance side. But in any case. i took several web frameworks
