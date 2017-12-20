@@ -13,7 +13,7 @@ List of frameworks:
 * [Shio](https://github.com/mehcode/shio-rs)
 * [tokio-minihttp](https://github.com/tokio-rs/tokio-minihttp) (not really a framework, but it is fast)
 
-All projects are compiled with `--release` parameter. I didn't test single
+All projects are compiled with `release` parameter. I didn't test single
 thread performance for iron and rocket. I ran all tests on my MacBook Pro with 2.9Gh i7 
 with 4 physical cpus and 8 logical cpus. As a testing tool i used *wrk* and
 following commands
@@ -55,3 +55,5 @@ tokio-minihttp | 106.900 | 1.047.000 |   |   |   |
 
 Absolute winner is *tokio-minihttp*. Which is makes sense, it doesn’t do much. 
 But it is good reference point.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-110322332-3/benchmarks/readme?pixel)](https://github.com/igrigorik/ga-beacon)
