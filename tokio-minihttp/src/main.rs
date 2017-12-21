@@ -1,5 +1,6 @@
 extern crate env_logger;
 extern crate futures;
+extern crate num_cpus;
 extern crate tokio_minihttp;
 extern crate tokio_proto;
 extern crate tokio_service;
@@ -38,6 +39,7 @@ impl Service for HelloWorld {
 fn main() {
     drop(env_logger::init());
     let addr = "0.0.0.0:8080".parse().unwrap();
-    TcpServer::new(Http, addr)
-        .serve(|| Ok(HelloWorld));
+    let mut srv = TcpServer::new(Http, addr);
+    srv.threads(1);
+    srv.serve(|| Ok(HelloWorld));
 }

@@ -55,3 +55,6 @@ tokio-minihttp | 106.900 | 1.047.000 |   |   |   |
 
 Absolute winner is *tokio-minihttp*. Which is makes sense, it doesn’t do much. 
 But it is good reference point.
+
+*UPDATE* I found out how to run *tokio-minihttp* in multiple threads, but i do not see
+any improvement on performance, similar to shio-rs.
