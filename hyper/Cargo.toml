@@ -1,0 +1,7 @@
+[package]
+name = "hello"
+version = "0.0.0"
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1"
