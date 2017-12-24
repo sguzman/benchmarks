@@ -51,6 +51,7 @@ Gotham | 61.000 | 178.000 |   |   |   |
 Iron |   |   |   |   | 94.500 | 78.000
 Rocket |   |   |   |   | 95.500 | failed
 Shio | 71.800 | 317.800 |   |   |   |   |
+Hyper-may | 61.000 | | 102.000 | | | |
 tokio-minihttp | 106.900 | 1.047.000 |   |   |   |
 
 Absolute winner is *tokio-minihttp*. Which is makes sense, it doesn’t do much. 
