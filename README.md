@@ -44,9 +44,9 @@ socket option?. Also, I had to modify shio to make it support â€œhttp pipelineâ€
 
 Each result in this table is best of five runs. All measurements are in *req/sec*.
 
-Name | 1 thread | 1 pipeline | 3 thread | 3 pipeline | 8 thread | 8 pipeline
+Name | 1 thread | 1 pipeline | 2 thread | 2 pipeline | 8 thread | 8 pipeline
 ---- | -------- | ---------- | -------- | ---------- | -------- | ----------
-Actix | 91.200 | 950.000 | 122.100 | 2.083.000 | 107.400 | 2.730.000
+Actix | 91.200 | 950.000 | 129.000 | 1.809.000 | 107.400 | 2.730.000
 Gotham | 61.000 | 178.000 |   |   |   |
 Iron |   |   |   |   | 94.500 | 78.000
 Rocket |   |   |   |   | 95.500 | failed

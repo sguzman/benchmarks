@@ -40,6 +40,6 @@ fn main() {
     drop(env_logger::init());
     let addr = "0.0.0.0:8080".parse().unwrap();
     let mut srv = TcpServer::new(Http, addr);
-    srv.threads(1);
+    //srv.threads(8);
     srv.serve(|| Ok(HelloWorld));
 }
