@@ -9,7 +9,7 @@ fn main() {
     HttpServer::new(
         || Application::default()
             .resource("/", |r| r.f(|_| HttpResponse::Ok().body("Hello World!"))))
-        .threads(2)
+        .threads(1)
         .bind("127.0.0.1:8080").unwrap()
         .start();
 
