@@ -11,6 +11,7 @@ List of frameworks:
 * [Iron](http://ironframework.io)
 * [Rocket](https://rocket.rs)
 * [Shio](https://github.com/mehcode/shio-rs)
+* [Hyper](https://hyper.rs)
 * [tokio-minihttp](https://github.com/tokio-rs/tokio-minihttp) (not really a framework, but it is fast)
 
 All projects are compiled with `release` parameter. I didn't test single
