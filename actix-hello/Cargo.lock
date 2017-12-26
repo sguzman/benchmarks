@@ -16,7 +16,7 @@ dependencies = [
 [[package]]
 name = "actix-web"
 version = "0.3.0"
-source = "git+https://github.com/actix/actix-web.git#5b65987f6aff806fa0abbb272b1c0c937f64f975"
+source = "git+https://github.com/actix/actix-web.git#ffb5742b7138dd81ebec2eadd468b4c8baace7cd"
 dependencies = [
  "actix 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
