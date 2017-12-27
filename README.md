@@ -56,10 +56,10 @@ Hyper (0.11) | 85.000 | 615.000 | | | | |
 Hyper-may | 61.000 | | 102.000 | | | |
 tokio-minihttp | 106.900 | 1.047.000 |   |   |   |
 
-Absolute winner is *tokio-minihttp*. Which is makes sense, it doesn’t do much. 
+Absolute winner is *tokio-minihttp*. Which makes sense, it doesn’t do much. 
 But it is good reference point.
 
 *UPDATE* I found out how to run *tokio-minihttp* in multiple threads, but i do not see
-any improvement in performance, similar to shio-rs.
+any improvement in performance, similar to shio-rs and hyper.
 
 [![Analytics](https://ga-beacon.appspot.com/UA-110322332-2/benchmarks?pixel)](https://github.com/igrigorik/ga-beacon)
