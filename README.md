@@ -3,7 +3,7 @@
 This is totally unscientific and probably pretty useless. In real world business
 logic would dominate on performance side. Check [TechEmpower Framework Benchmark](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=plaintext) for more realistic benchmarks.
  
-But in any case. i took several RUST web frameworks and used theirs *hello world* example. 
+But in any case. i took several rust web frameworks and used theirs *hello world* example. 
 
 List of frameworks:
 
