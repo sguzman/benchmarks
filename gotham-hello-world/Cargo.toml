@@ -1,10 +1,12 @@
 [package]
-name = "hello_world"
-version = "0.1.0"
-authors = ["Bradley Beddoes <bradleybeddoes@gmail.com>"]
+name = "gotham_examples_hello_world"
+description = "A Hello World example application for working with Gotham."
+version = "0.0.0"
+publish = false
 
 [dependencies]
-gotham = "0.1"
+gotham = { git = "https://github.com/gotham-rs/gotham.git" }
+
 hyper = "0.11"
 futures = "~0.1.11"
 mime = "0.3"

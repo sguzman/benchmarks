@@ -1,35 +1,53 @@
-# Hello World - Gotham Example Application
+# Hello World
 
-A Hello World example application for working with [Gotham](https://gotham.rs). 
-Useful as a very light touch introduction to Gotham or as a point to build from
-when you have very simple requirements and don't need a Router to handle 
-dispatch, middleware, pipelines etc.
+A simple introduction to working with Gotham.
 
-For an example of working with Gotham when you have more complex requirements
-please see our official 
-[example application](https://github.com/gotham-rs/example-app) which 
-includes usage of the Gotham Router and other advanced Gotham components.
+## Running
+
+From the `examples/hello_world` directory:
+
+```
+Terminal 1:
+$ cargo run
+   Compiling hello_world (file:///.../examples/hello_world)
+    Finished dev [unoptimized + debuginfo] target(s) in 4.26 secs
+     Running `../hello_world`
+  Listening for requests at http://127.0.0.1:7878
+
+Terminal 2:
+$ curl -v http://127.0.0.1:7878/
+*  Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to 127.0.0.1 (127.0.0.1) port 7878 (#0)
+> GET / HTTP/1.1
+> Host: 127.0.0.1:7878
+> User-Agent: curl/7.54.1
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Length: 12
+< Content-Type: text/plain
+< X-Request-ID: 88ec311c-fc77-4d2e-b302-b1ba38718d96
+< X-Frame-Options: DENY
+< X-XSS-Protection: 1; mode=block
+< X-Content-Type-Options: nosniff
+< X-Runtime-Microseconds: 51
+< Date: Fri, 05 Jan 2018 06:25:00 GMT
+<
+* Connection #0 to host 127.0.0.1 left intact
+Hello World!%
+```
 
 ## License
-This example application is licensed under your option of:
 
-* [MIT License](LICENSE-MIT)
-* [Apache License, Version 2.0](LICENSE-APACHE)
+Licensed under your option of:
 
-## Learning Gotham
-All of the following resources are available to assist you learning Gotham:
+* [MIT License](../../LICENSE-MIT)
+* [Apache License, Version 2.0](../../LICENSE-APACHE)
 
-* [The Gotham website](https://gotham.rs)
-* [Our API documentation](https://docs.rs/gotham/)
-* [The Gotham book](https://book.gotham.rs)
-* [Our example application](https://github.com/gotham-rs/example-app)
+## Community
 
-## Help
-The Gotham core team collaborate on the 
-[#gotham](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23gotham) 
-channel on irc.mozilla.org. Gotham specific chat and requests for help are 
-both very welcome here.
+The following policies guide participation in our project and our community:
 
-Additionally the Gotham core team often hang out in
-[#rust-webdev](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-webdev) and [#rust](https://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust).
-
+* [Conduct](../../CONDUCT.md)
+* [Contributing](../../CONTRIBUTING.md)
