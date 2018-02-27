@@ -8,8 +8,9 @@ fn main() {
 
     HttpServer::new(
         || Application::default()
-            .handler("/", |_|
-                HttpResponse::Ok().content_type("text/plain; charset=utf-8").body("Hello World!")))
+            .resource(
+                "/", |r| r.f(|_| HttpResponse::Ok()
+                             .content_type("text/plain; charset=utf-8").body("Hello World!"))))
         .threads(1)
         .bind("127.0.0.1:8080").unwrap()
         .start();
