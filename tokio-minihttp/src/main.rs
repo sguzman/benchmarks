@@ -31,7 +31,8 @@ impl Service for HelloWorld {
 
     fn call(&self, _request: Request) -> Self::Future {
         let mut resp = Response::new();
-        resp.body("Hello, world!");
+        resp.header("Content-Type", "application/json")
+            .body("Hello, world!");
         future::ok(resp)
     }
 }
