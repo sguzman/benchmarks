@@ -62,5 +62,3 @@ But it is good reference point.
 
 *UPDATE* I found out how to run *tokio-minihttp* in multiple threads, but i do not see
 any improvement in performance, similar to shio-rs and hyper.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-110322332-2/benchmarks?pixel)](https://github.com/igrigorik/ga-beacon)
