@@ -37,9 +37,7 @@ see this huge numbers of processed requests :) Second, it is kind of
 pre-requisite for *HTTP/2.0* support.
 
 For asynchronous frameworks i wanted to see how multithreading influence 
-performance, but multithreading is actually harder than i expected. For example 
-I couldn’t find out how to run *Gotham* in mutiple threads. Seems it just assumes 
-developer need to come up with the way how to run it themselves. On other hand is *Shio*, 
+performance, but multithreading is actually harder than i expected. In *Shio*, 
 i could run it in multiple threads, but there is no difference with 1 thread 
 performance. Maybe something is wrong with how macOS handle reuse address 
 socket option?. Also, I had to modify shio to make it support “http pipeline”.
