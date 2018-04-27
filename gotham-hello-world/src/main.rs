@@ -29,7 +29,7 @@ pub fn say_hello(state: State) -> (State, Response) {
 pub fn main() {
     let addr = "127.0.0.1:8080";
     println!("Listening for requests at http://{}", addr);
-    gotham::start(addr, || Ok(say_hello))
+    gotham::start_with_num_threads(addr, 1, || Ok(say_hello))
 }
 
 #[cfg(test)]
